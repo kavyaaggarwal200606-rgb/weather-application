@@ -34,7 +34,7 @@ let mix = await hah.json()
 setTimeout(() => {
 
      if (mix.cod == 404) {
-    temp.innerText = `${value.toLocaleUpperCase()} is not available here mam hehe 😗😗 but you can search your city (but be sure your spelling is correct naaaa) `;
+    temp.innerText = `city not founded  `;
     bottom.classList.add("hide")
      repeat.innerText = ""
      repeat.innerText = value
