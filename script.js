@@ -21,7 +21,7 @@ let contai = document.querySelector(".container");
 //   .then(data => console.log(data))
 //   .catch(err => console.log(err));
 
-kavyaa =  async () => {
+const kavyaa =  async () => {
     temp.innerText = `loding......`;
 
 
@@ -33,13 +33,18 @@ let mix = await hah.json()
 
 setTimeout(() => {
 
-    if (mix.cod == 404) {
-    temp.innerText = "City not founded";
+     if (mix.cod == 404) {
+    temp.innerText = `${value.toLocaleUpperCase()} is not available here mam hehe 😗😗 but you can search your city (but be sure your spelling is correct naaaa) `;
     bottom.classList.add("hide")
      repeat.innerText = ""
+     repeat.innerText = value
 
-    
-}else{
+
+}  
+
+
+
+else{
 
     bottom.classList.remove("hide")
 
@@ -63,12 +68,14 @@ setTimeout(() => {
     //     contai.style.backgroundImage = `url("normal.jpg")`;
     // }
 }
-},2000)
 
+
+
+
+
+},2000);
 
 }
-
-
 
 input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
@@ -80,8 +87,3 @@ input.addEventListener("keydown", (e) => {
 search.addEventListener("click" ,() => {
     kavyaa();
 })
-
-
-
-
-

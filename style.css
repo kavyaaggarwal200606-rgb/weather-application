@@ -29,8 +29,8 @@
     background-image: url(image.png);
     background-size: cover;
     background-position: center;
-    padding: 30px 20px;
-    gap: 70px;
+    padding: 30px 20px; 
+    gap: 70px; 
 }
 
 .snd {
